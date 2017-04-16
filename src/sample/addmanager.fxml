@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #585858;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="38.0" layoutY="37.0" prefHeight="46.0" prefWidth="356.0" style="-fx-font-size: 30; -fx-text-fill: #00FFFF;" stylesheets="@dark.css" text="Add Manager" textFill="#c95656">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="PPrice" layoutX="29.0" layoutY="152.0" prefHeight="29.0" prefWidth="96.0" promptText="name" />
+            <TextField fx:id="PColor" layoutX="133.0" layoutY="152.0" prefHeight="28.0" prefWidth="105.0" promptText="phone" />
+            <TextField fx:id="PSize" layoutX="250.0" layoutY="153.0" prefHeight="27.0" prefWidth="133.0" promptText="password" />
+            <Button layoutX="29.0" layoutY="278.0" mnemonicParsing="false" onAction="#addManagerClick" prefHeight="34.0" prefWidth="151.0" text="Add manager" />
+            <DatePicker fx:id="datePicker" layoutX="394.0" layoutY="153.0" />
+            <TextField fx:id="PDiscription" editable="false" layoutX="29.0" layoutY="114.0" prefHeight="27.0" prefWidth="96.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

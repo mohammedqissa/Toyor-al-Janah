@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #585858;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="26.0" layoutY="9.0" prefHeight="24.0" prefWidth="154.0" style="-fx-font-size: 30; -fx-text-fill: #00FFFF;" stylesheets="@dark.css" text="products" textFill="#c95656">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="catagoryCombo" disable="true" layoutX="28.0" layoutY="59.0" prefWidth="150.0" promptText="catagory" />
+            <Button layoutX="198.0" layoutY="128.0" mnemonicParsing="false" onAction="#saleshow" text="show" />
+            <ComboBox fx:id="sizeCombo" disable="true" layoutX="28.0" layoutY="94.0" prefWidth="150.0" promptText="size" />
+            <TextField fx:id="prodID" layoutX="25.0" layoutY="233.0" prefHeight="32.0" prefWidth="157.0" promptText="ID" />
+            <Button layoutX="194.0" layoutY="234.0" mnemonicParsing="false" onAction="#showbyID" prefHeight="31.0" prefWidth="85.0" text="show" />
+            <Label layoutX="24.0" layoutY="207.0" prefHeight="20.0" prefWidth="192.0" text="or search by product ID" />
+            <Button layoutX="691.0" layoutY="9.0" mnemonicParsing="false" onAction="#logout" prefHeight="33.0" prefWidth="109.0" text="logout" />
+            <ComboBox fx:id="kindCombo" disable="true" layoutX="28.0" layoutY="130.0" prefWidth="150.0" promptText="kind" />
+            <ImageView fx:id="productImage" fitHeight="154.0" fitWidth="347.0" layoutX="332.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="prodDisc" alignment="TOP_LEFT" layoutX="327.0" layoutY="394.0" prefHeight="14.0" prefWidth="455.0" style="-fx-font-size: 20; -fx-text-fill: red;" text="product discription" />
+            <Button layoutX="24.0" layoutY="314.0" mnemonicParsing="false" onAction="#addtoShopings" text="add to shoping cart" />
+            <Button layoutX="194.0" layoutY="57.0" mnemonicParsing="false" onAction="#loadsale" prefHeight="31.0" prefWidth="89.0" text="load" />
+            <ListView fx:id="productList" layoutX="330.0" layoutY="20.0" onMouseClicked="#setImage" prefHeight="202.0" prefWidth="358.0" />
+            <Button layoutX="24.0" layoutY="368.0" mnemonicParsing="false" onAction="#show" text="view shopings" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
